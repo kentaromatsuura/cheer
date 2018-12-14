@@ -2,16 +2,38 @@
   <div id="app">
     <div id="nav">
       <div align = "right">
-        <router-link to="/">Login</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/signin">Login</router-link> |
+        <router-link to="/">Home</router-link>
         <router-link to="/about"> | Future</router-link>
-        <router-link to="/about"> | Pricing</router-link>
+        <v-list-tile v-on:click="signout">Signout</v-list-tile>
+        <router-link to="/"> | Sign out</router-link>
         <router-link to="/about"> | Contact us</router-link>
       </div>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import firebase from "firebase";
+export default {
+  name: "SignOut",
+  data:() => ({
+      drawer: false
+  }),
+    props: {
+        source: String
+    },
+  methods: {
+    signout: function () {
+      alert("a");
+      firebase.auth().signOut().then(() => {          
+          this.$router.push('/')
+        });
+    }
+  }
+};
+</script>
 
 <style>
 #app {
