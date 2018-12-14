@@ -27,7 +27,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Signup.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/signup.vue')
     },
     {
       path: '/signin',
@@ -44,7 +44,14 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Signout.vue')
-    }
-    
+    },
+    {
+      path: '/calender',
+      name: 'calender',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Calender.vue')
+    }  
   ]
 })
