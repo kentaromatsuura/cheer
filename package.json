@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "firebase": "^5.7.0",
+    "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
     "vue-carousel": "^0.16.1",
     "vue-router": "^3.0.1",
