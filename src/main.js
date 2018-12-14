@@ -4,10 +4,10 @@ import Vuetify from "vuetify";
 import router from './router'
 import firebase from "firebase"
 import "vuetify/dist/vuetify.min.css";
-import VueCarousel from 'vue-carousel';
+import VueCarousel from "vue-carousel";
 
-Vue.use(VueCarousel);
 Vue.use(Vuetify);
+Vue.use(VueCarousel);
 
 Vue.config.productionTip = false
 var config = {
