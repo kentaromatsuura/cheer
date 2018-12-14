@@ -24,8 +24,9 @@
      </div>
     <br>
     <p>
-      <button v-on:click="Enter">{{start}}</button>
-      <h1 v-if="show">私は{{ love }}が好きです</h1>
+      <!-- <button v-on:click="Enter">{{start}}</button> -->
+      <!-- <h1 v-if="show">私は{{ love }}が好きです</h1> -->
+      <router-link to="/signup">今すぐ始める！</router-link>
     </p>
   </div>
 </template>
