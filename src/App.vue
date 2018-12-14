@@ -5,8 +5,7 @@
         <router-link to="/signin">Login</router-link> |
         <router-link to="/">Home</router-link>
         <router-link to="/about"> | Future</router-link>
-        <v-list-tile v-on:click="signout">Signout</v-list-tile>
-        <router-link to="/"> | Sign out</router-link>
+        <v-list-tile v-on:click="signout">| Signout</v-list-tile>
         <router-link to="/about"> | Contact us</router-link>
       </div>
     </div>
