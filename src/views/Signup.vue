@@ -37,8 +37,7 @@ export default {
         .catch(error => {
           alert(error.message);
         });
-      }
-    },
+      },
     signUpGoogle: function () {
       var provider = new firebase.auth.GoogleAuthProvider();
       
@@ -59,4 +58,5 @@ export default {
       });
     }
   }
+}
 </script>
