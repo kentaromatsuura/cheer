@@ -1,6 +1,6 @@
 <template>
     <div class="timeline">
-        <h1>My Works</h1>
+        <h5>My Works</h5>
         <div class="container">
         <div class="row">
             <div class="col-md-4"><img alt="Vue logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg/340px-Claude_Monet_-_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son_-_Google_Art_Project.jpg" class="money"><br>
