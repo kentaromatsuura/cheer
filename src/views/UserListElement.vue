@@ -2,7 +2,7 @@
   <v-card
     hover
     width="500px"
-    :to="`/toppage/${user.id}`"
+    :to="`/Artistpage/${user.id}`"
   >
     <v-img
       :src="userImage"
