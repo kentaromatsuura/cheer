@@ -1,5 +1,5 @@
 <template>
-    <div class="topapge">
+    <div class="toppage">
         <h1>Cheerへようこそ！</h1>
         <v-card>
             <v-container fluid grid-list-md>

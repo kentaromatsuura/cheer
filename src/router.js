@@ -54,7 +54,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/Toppage.vue')
     },
     {
-      path: '/works',
+      path: '/toppage/1',
       name: 'works',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
@@ -68,6 +68,31 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Calender.vue')
+    },
+    {
+      path: '/artistpage/:userId',
+      name: 'artistpage',
+      props: true,
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Artistpage.vue')
+    },
+    {
+      path: '/mywork',
+      name: 'mywork',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/Mywork.vue')
+    },
+    {
+      path: '/timeline',
+      name: 'timeline',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: “about” */ './views/Timeline.vue')
     }
   ] 
 });

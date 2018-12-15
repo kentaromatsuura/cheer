@@ -25,7 +25,7 @@ export default {
     },
   methods: {
     signout: function () {
-      alert("a");
+      alert("sign out");
       firebase.auth().signOut().then(() => {          
           this.$router.push('/')
         });

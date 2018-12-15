@@ -1,53 +1,194 @@
 <template>
-   <div>
-   <h3>影響を与えた作品</h3>
-   <carousel>
+  <div>
+  <h3>My Favorite Works</h3>
+  <carousel>
    <slide>
-       <h4><img alt="Vue logo" src="https://photosku.com/images_file/small_images/s005_046.jpg" class="money"></h4>
-       <br>Slide 1 Content
-   </slide>
+       <figure class="snip1382">
+           <img src="https://afremov.com/images/product/image_473.jpeg" alt="sample99" />
+           <figcaption>
+               <h2>RAIN IMPRESSION</h2>
+               <p>We are used to associate rain with fresh and chilly colors – blue, green, silver, violet… But who said the palette of rain should be limited to just one end of the spectrum?</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="http://kenpaintings.com/12x16/12x16-111209-farm-hills.jpg" alt="sample99" />
+           <figcaption>
+               <h2>FARM HILLS</h2>
+               <p>Original Seascape Impression Oil Painting from KenPaintings.com Online Gallery. Home of Artist Kenneth John , Ken paints coastal seascape, landscape and still life oil paintings in a range from art realism to impression to expression. Raised on the central east coast of Florida, many of Ken's paintings are in the Florida Art Highwaymen style.</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="http://farm3.static.flickr.com/2726/5702109330_32473e5ed8.jpg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
    <slide>
-       <h4><img alt="Vue logo" src="https://d1f5hsy4d47upe.cloudfront.net/8c/8c1a69c50533d932d3b8fcafecadc30f_t.jpeg" class="money"></h4>
-       <br>Slide 2 Content
-   </slide>
-   <slide>
-       <h4><img alt="Vue logo" src="http://farm3.static.flickr.com/2726/5702109330_32473e5ed8.jpg" class="money"></h4>
-       <br>Slide 3 Content
-   </slide>
-   <slide>
-       <h4><img alt="Vue logo" src="http://www.hc.keio.ac.jp/ja/hiyoshi_campus/bits/9esamb0000000pk7-img/akikusamonko_1.jpg" class="money"></h4>
-       <br>Slide 4 Content
-   </slide>
-   <slide>
-       <h4><img alt="Vue logo" src="https://d1f5hsy4d47upe.cloudfront.net/d5/d584fcd1e55442439b28dd120d22897b_t.jpeg" class="money"></h4>
-       <br>Slide 5 Content
-   </slide>
-   <slide>
-       <h4><img alt="Vue logo" src="https://secure02.blue.shared-server.net/www.sebiji.com/goods_image/A53_I3.jpg" class="money"></h4>
-       <br>Slide 6 Content
-   </slide>
-   </carousel>
-   </div>
+       <figure class="snip1382">
+           <img src="https://d1f5hsy4d47upe.cloudfront.net/d5/d584fcd1e55442439b28dd120d22897b_t.jpeg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  </carousel>
+  </div>
 </template>
 
 
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
-export default {
+   import { Carousel, Slide } from 'vue-carousel';
+   export default {
 
- components: {
+   components: {
    Carousel,
    Slide
- }
+   }
 
-};
-
-
+   };
 </script>
 
 <style>
-h4 {
-   height: 380px;
-}
+
+   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,900);
+   @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+   figure.snip1382 {
+       font-family: 'Source Sans Pro', Arial, sans-serif;
+       position: relative;
+       overflow: hidden;
+       margin: 90px;
+       min-width: 300px;
+       max-width: 455px;
+       max-height: 360px;
+       width: 100%;
+       color: #ffffff;
+       text-align: center;
+       font-size: 16px;
+   }
+   figure.snip1382 * {
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       -webkit-transition: all 0.35s ease;
+       transition: all 0.35s ease;
+   }
+   figure.snip1382 img {
+       max-width: 100%;
+   }
+   figure.snip1382:after,
+   figure.snip1382:before,
+   figure.snip1382 figcaption:after,
+   figure.snip1382 figcaption:before {
+       background: #0a0a0a;
+       height: 25%;
+       position: absolute;
+       content: '';
+       opacity: 0;
+       -webkit-transition: all 0.35s steps(4);
+       transition: all 0.35s steps(4);
+       z-index: 1;
+       left: 50%;
+       right: 50%;
+   }
+   figure.snip1382:before {
+       top: 0;
+       -webkit-transition-delay: 0;
+       transition-delay: 0;
+   }
+   figure.snip1382:after {
+       top: 25%;
+       -webkit-transition-delay: 0.1s;
+       transition-delay: 0.1s;
+   }
+   figure.snip1382 figcaption:before {
+       top: 50%;
+       -webkit-transition-delay: 0.2s;
+       transition-delay: 0.2s;
+       z-index: -1;
+   }
+   figure.snip1382 figcaption:after {
+top: 75%;
+       -webkit-transition-delay: 0.3s;
+       transition-delay: 0.3s;
+       z-index: -1;
+   }
+   figure.snip1382 figcaption {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       z-index: 2;
+       padding: 30px;
+   }
+   figure.snip1382 h2,
+   figure.snip1382 p,
+   figure.snip1382 .icons {
+       margin: 0;
+       width: 100%;
+       opacity: 0;
+   }
+   figure.snip1382 h2 {
+       font-weight: 900;
+       text-transform: uppercase;
+   }
+   figure.snip1382 p {
+       font-weight: 300;
+   }
+   figure.snip1382 .icons {
+       position: absolute;
+       bottom: 30px;
+       left: 0;
+       width: 100%;
+   }
+   figure.snip1382 i {
+       padding: 0px 10px;
+       display: inline-block;
+       font-size: 24px;
+       color: #ffffff;
+       text-align: center;
+       opacity: 0.8;
+       text-decoration: none;
+   }
+   figure.snip1382 i:hover {
+       opacity: 1;
+   }
+   figure.snip1382:hover:after,
+   figure.snip1382.hover:after,
+   figure.snip1382:hover:before,
+   figure.snip1382.hover:before,
+   figure.snip1382:hover figcaption:after,
+   figure.snip1382.hover figcaption:after,
+   figure.snip1382:hover figcaption:before,
+   figure.snip1382.hover figcaption:before {
+       left: 0;
+       right: 0;
+       opacity: 0.8;
+   }
+   figure.snip1382:hover figcaption h2,
+   figure.snip1382.hover figcaption h2,
+   figure.snip1382:hover figcaption p,
+   figure.snip1382.hover figcaption p,
+   figure.snip1382:hover figcaption .icons,
+   figure.snip1382.hover figcaption .icons {
+       -webkit-transition-delay: 0.25s;
+       transition-delay: 0.25s;
+   }
+   figure.snip1382:hover figcaption h2,
+   figure.snip1382.hover figcaption h2,
+   figure.snip1382:hover figcaption .icons,
+   figure.snip1382.hover figcaption .icons {
+       opacity: 1;
+   }
+   figure.snip1382:hover figcaption p,
+   figure.snip1382.hover figcaption p {
+       opacity: 0.7;
+   }
 </style>
