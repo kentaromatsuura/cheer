@@ -1,15 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <div align = "right">
-        <router-link to="/signin">Login</router-link> |
-        <router-link to="/">Home</router-link>
-        <router-link to="/about"> | Future</router-link>
-        <v-list-tile v-on:click="signout">| Signout</v-list-tile>
-        <router-link to="/about"> | Contact us</router-link>
-      </div>
-    </div>
-    <router-view/>
+
+    <v-toolbar
+      color="orange lighten-2"
+      dense
+      fixed
+      clipped-left
+      dark
+      app
+    >
+    
+
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <v-btn flat to="/">Home </v-btn>
+        <v-btn flat to="/signin"> Log In </v-btn> 
+        <v-btn flat to="/signout">  Sign Out </v-btn>
+        <v-btn flat to="/about">  Contact us </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-content>
+      <router-view/>
+    </v-content>
   </div>
 </template>
 

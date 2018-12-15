@@ -9,15 +9,15 @@
      <div class="container">
       <div class="row">
         <div class="col-md-4"><img alt="Vue logo" src="../assets/enogu.jpg" class="money"><br>
-          <h5>夢に向かうクリエイターの努力を見ることができます</h5>
+          <h5>夢に向かうクリエイターの努力<br>を見ることができます</h5>
             <h6>制作活動はもちろん、取材や売り込み、資料調査など表には出てこないクリエイターの様々な努力をCheerではみることができます。Cheerで将来性のあるクリエイターと出会ってみませんか？</h6>
         </div>
         <div class="col-md-4"><img alt="Vue logo" src="../assets/money.jpg" class="money">
-          <h5>見込みがある！と思ったクリエイターにはTipができます</h5>
+          <h5>見込みがある！と思った<br>クリエイターには<br>Tipができます</h5>
           <h6>Cheerで正しい努力を十分な量行なっているクリエイターを見つけたら、彼らにTipして経済的に支援することができます。Tipしておくと彼らが成長した時に仕事の依頼がしやすくなります。</h6>
         </div>
         <div class="col-md-4"><img alt="Vue logo" src="../assets/present.jpg" class="money">
-          <h5>Tipで溜まったポイントでお返しもゲットできます</h5>
+          <h5>Tipで溜まったポイントで<br>お返しもゲットできます</h5>
           <h6>Tipするとそのクリエイターが用意しているお返しをゲットできます。レア画像や個展へのチケットなど様々なクリエイターのお返しをゲットしましょう！</h6>
         </div>
       </div>
@@ -55,7 +55,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {color: white;
-font-size: 80px;
+font-size: 56px;
+font-family: 'ヒラギノ角ゴ ProN W3', Arial, sans-serif ;
 }
 h2 {color: black;
 font-size: 50px;
@@ -68,7 +69,7 @@ h4 {
   color: white;
 }
 h5 {color: black;
-font-size: 40px;
+font-size: 24px;
 }
 h6 {color:grey;
 font-size: 20px;
