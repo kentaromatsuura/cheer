@@ -1,6 +1,6 @@
 <template>
     <div class="timeline">
-        <h1>My Works</h1>
+        <h5>My Works</h5>
         <div class="container">
         <div class="row">
           <div class="col-md-4">
