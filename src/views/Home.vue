@@ -20,7 +20,7 @@ export default {
 </script>
 <style>
 img.logo {
- width: 269px;
- height: 429px;
+  width: 269px;
+  height: 429px;
 }
 </style>

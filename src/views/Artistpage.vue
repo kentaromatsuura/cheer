@@ -48,7 +48,7 @@
                     >
                             <v-flex xs12 align-end flexbox>
                                 <span class="headline white--text">
-                                    <v-btn router-link :to="`${user.id}/works/`">私に影響を与え作品</router-link></v-btn>
+                                    <v-btn router-link :to="`${user.id}/works/`">私に影響を与えた作品</v-btn>
                                 </span>
                             </v-flex>
                     </v-img>
@@ -59,7 +59,7 @@
                     width="500">
                             <v-flex xs12 align-end flexbox>
                                 <span class="headline white--text">
-                                    <v-btn router-link to="/calender">{{user.name}}さんの予定</router-link></v-btn>
+                                    <v-btn router-link to="/calender">{{user.name}}さんの予定</v-btn>
                                 </span>
                             </v-flex>
                 </v-img>
@@ -70,7 +70,7 @@
                     width="500">
                             <v-flex xs12 align-end flexbox>
                                 <span class="headline white--text">
-                                    <v-btn router-link to="/timeline">{{user.name}}さんの作品</router-link></v-btn>
+                                    <v-btn router-link to="/timeline">{{user.name}}さんの作品</v-btn>
                                 </span>
                             </v-flex>
                 </v-img>
@@ -120,7 +120,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .artistpage {
     background-color: #f7be65;
 }

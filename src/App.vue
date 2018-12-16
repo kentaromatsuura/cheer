@@ -1,16 +1,57 @@
 <template>
   <div id="app" data-app>
-    <div id="nav">
-      <div align = "right">
-        <router-link to="/signin">Login</router-link> |
-        <router-link to="/">Home</router-link>
-        <router-link to="/about"> | Future</router-link>
-        <v-list-tile v-on:click="signout">| Signout</v-list-tile>
-        <router-link to="/about"> | Contact us</router-link>
-      </div>
-    </div>
-    <router-view/>
-  </div>
+    <v-toolbar
+      color="orange lighten-2"
+      dense
+      fixed
+      clipped-left
+      dark
+      app
+    >
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+        <v-btn flat to="/">Home </v-btn>
+        <v-btn flat to="/signup">  Sign Up </v-btn>
+        <v-btn flat to="/signin"> Log In </v-btn> 
+        <v-btn flat to="/signout">  Sign Out </v-btn>
+        <v-btn flat to="/about">  Contact us </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-content>
+      <router-view/>
+    </v-content>
+
+    <v-footer
+    height="auto"
+    color="#111"
+    >
+      
+      <v-card
+      class="flex"
+      flat
+      tile
+      color="#f7be65"
+      >
+        <v-card-title class="gray --text text-xs-center">
+          <strong class="subheading">Get connected with us on social networks!</strong>
+          <v-spacer></v-spacer>
+          <v-layout justify-space-around>   
+
+            <v-icon class="gray--text">mdi-facebook</v-icon>
+
+            <v-icon class="gray--text">mdi-twitter</v-icon>
+
+            <v-icon class="gray--text">mdi-instagram</v-icon>
+
+            <v-icon class="gray--text">mdi-google-plus</v-icon>
+          </v-layout>
+        </v-card-title>
+        <v-card-actions class="gray--text justify-center">
+         &copy;2018 — <strong>Cheer</strong>
+        </v-card-actions>
+        </v-card>
+    </v-footer>
+ </div> 
 </template>
 
 <script>
