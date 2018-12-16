@@ -1,7 +1,8 @@
 <template>
   <div>
   <h3>My Favorite Works</h3>
-  <carousel>
+  <!-- <carousel> -->
+    <carousel v-bind:autoplay="true"  v-bind:loop="true">
    <slide>
        <figure class="snip1382">
            <img src="https://afremov.com/images/product/image_473.jpeg" alt="sample99" />
@@ -32,6 +33,69 @@
    <slide>
        <figure class="snip1382">
            <img src="https://d1f5hsy4d47upe.cloudfront.net/d5/d584fcd1e55442439b28dd120d22897b_t.jpeg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="http://2.bp.blogspot.com/-kKfCwmtxpvM/UxLoQckHGsI/AAAAAAAAAiU/j21n-ovWv0A/s1600/imgb3a62feczikezj.jpeg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="http://oldfashioned.cocolog-nifty.com/blog/images/2012/11/09/classe_de_danse.jpg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="https://assets.media-platform.com/cafeglobe/dist/images/2017/12/20171222_audrey_top-w960.jpg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="https://pickup.cinemacafe.net/uploads/article/image/47/card_283058.jpg" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fwizardsandwhatnot.com%2Ffiles%2F2015%2F11%2FHarry-Potter-books.jpg&c=sc&w=850&h=560" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="https://s3-ap-northeast-1.amazonaws.com/tabi-channel/upload_by_admin/sheikh_zayed_mosque_image_800" alt="sample99" />
+           <figcaption>
+               <h2>Sample</h2>
+               <p>sample</p>
+           </figcaption>
+       </figure>
+  </slide>
+  <slide>
+       <figure class="snip1382">
+           <img src="http://img-cdn.guide.travel.co.jp/article/962/26377/29D974343D484C6DB9E246337CCBE51F_LL.jpg" alt="sample99" />
            <figcaption>
                <h2>Sample</h2>
                <p>sample</p>
