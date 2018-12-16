@@ -5,6 +5,9 @@ import router from './router'
 import firebase from "firebase"
 import "vuetify/dist/vuetify.min.css";
 import VueCarousel from "vue-carousel";
+import 'vuetify/dist/vuetify.min.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import '@mdi/font/css/materialdesignicons.css'
 
 Vue.use(Vuetify);
 Vue.use(VueCarousel);
