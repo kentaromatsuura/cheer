@@ -1,10 +1,8 @@
 <template>
   <div class="artistpage">
       <div class="SideBySide">
-          <v-text-field v-model="selected"></v-text-field>s
-        <h1>{{user.name}}さんのページ</h1>
+        <h1>{{user.name}}さんのページ<br><br>{{user.university}}</h1>
         <h1><v-img :src="user.image" width="150px"></v-img></h1>
-        <h1>
             <v-layout row justify-center>
                 <v-dialog v-model="dialog" persistent max-width="600px">
                     <v-btn slot="activator" color="primary" dark>{{user.name}}さんにTipする！</v-btn>
@@ -16,7 +14,7 @@
                             <v-container grid-list-md>
                                 <v-layout wrap>
                                     <v-flex xs12>
-                                        <v-text-field v-model="newToDoTitle"
+                                        <v-text-field type="number" min=0 v-model="newToDoTitle"
                                         label="送金金額を記入してください*" required></v-text-field>
                                     </v-flex>
                                     <v-flex xs12>
@@ -24,11 +22,8 @@
                                     </v-flex>
                                     <v-flex xs12 sm12>
                                         <v-select v-model="selected" :items="items" label="送金方法*" required>
-                                                <v-if v-model="selected">
-                                                    <v-text-filed required>
-                                                    </v-text-filed>
-                                                </v-if>
                                         </v-select>
+                                        <v-text-field v-if="selected == 'クレジットカード'" required label="カード番号を入力してください"/>
                                     </v-flex>
                                 </v-layout>
                             </v-container>
@@ -41,20 +36,19 @@
                     </v-card>
                 </v-dialog>
             </v-layout>
-        </h1>
      </div>
     <br>
         <v-card>
             <v-container fluid grid-list-md fill-height　fill-width>
                 <v-layout  justify-center>
                 <v-flex>
-                    <v-img :src="require('../assets/logo.jpg')"
+                    <v-img :src="require('../assets/favorite work.jpg')"
                     height="500"
                     width="500"
                     >
                             <v-flex xs12 align-end flexbox>
                                 <span class="headline white--text">
-                                    <v-btn router-link :to="`${user.id}/works/`">私に影響を与えた作品</router-link></v-btn>
+                                    <v-btn router-link :to="`${user.id}/works/`">私に影響を与え作品</router-link></v-btn>
                                 </span>
                             </v-flex>
                     </v-img>
@@ -71,7 +65,7 @@
                 </v-img>
         </v-flex>
         <v-flex>
-                <v-img :src="require('../assets/logo.jpg')"
+                <v-img :src="require('../assets/favorite work.jpg')"
                     height="500"
                     width="500">
                             <v-flex xs12 align-end flexbox>
@@ -112,7 +106,7 @@ export default {
   },
   methods: {
       send: function(){
-      //dialog=false
+      this.dialog=false
       alert("送金完了しました！")
       this.todos.push({
         id: this.todos.length,
