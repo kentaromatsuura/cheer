@@ -8,7 +8,7 @@
   </div>
 </template>
 
-  <style scoped>
+<style scoped>
   
 h6 {color:grey;
 font-size: 20px;

@@ -26,7 +26,7 @@
     <p>
       <!-- <button v-on:click="Enter">{{start}}</button> -->
       <!-- <h1 v-if="show">私は{{ love }}が好きです</h1> -->
-      <router-link to="/signup">今すぐ始める！</router-link>
+       <v-btn router-link to="/signup">今すぐ始める！</v-btn>
     </p>
   </div>
 </template>
@@ -103,6 +103,10 @@ button.btn btn-primary:hover {
     background-color: #24d;
     /* 文字色を白色に指定 */
     color: #fff;
+}
+.v-btn{
+  font-size: 40px;
+  height: 40px;
 }
 
 </style>
