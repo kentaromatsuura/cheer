@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" data-app>
     <div id="nav">
       <div align = "right">
         <router-link to="/signin">Login</router-link> |
