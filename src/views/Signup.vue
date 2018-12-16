@@ -9,8 +9,8 @@
               </v-text-field>
               <v-text-field type="password" v-model="password" placeholder="password">
               </v-text-field>
-              <v-btn v-on:click="signUp">SignUp</v-btn>
-              <v-btn v-on:click="signUpGoogle">SignUpwithGoogleaccount</v-btn>
+              <v-btn v-on:click="signUp">Sign Up</v-btn>
+              <v-btn v-on:click="signUpGoogle">Sign Up with Googleaccount</v-btn>
             </v-flex>
           </v-layout>
         </v-container>
@@ -65,3 +65,12 @@ export default {
   }
 }
 </script>
+<style scoped>
+.v-btn{
+  font-size: 30px;
+  padding: 0px 30px;
+}
+h3{
+  font-size: 60px;
+}
+</style>

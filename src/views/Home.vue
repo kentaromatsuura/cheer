@@ -1,26 +1,13 @@
 <template>
-　<h2 page-header>
-    <div class="home">
-      <img alt="Vue logo" src="../assets/logo.jpg" class ="logo">
-      <HelloWorld msg="努力を可視化する次世代クリエイター応援サービス"/>
-    </div>
-　</h2>
+  <HelloWorld />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  import HelloWorld from '../components/HelloWorld'
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  export default {
+    components: {
+      HelloWorld
+    }
   }
-}
 </script>
-<style>
-img.logo {
-  width: 350px;
-  height: 550px;
-}
-</style>

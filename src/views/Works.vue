@@ -1,6 +1,6 @@
 <template>
-  <div>
-  <h3>My Favorite Works</h3>
+  <div class="works">
+  <h3>私に影響を与えた作品</h3>
   <carousel>
    <slide>
        <figure class="snip1382">
@@ -39,21 +39,33 @@
        </figure>
   </slide>
   </carousel>
+  <router-link :to="`/Artistpage/${user.id}`">Back</router-link>
   </div>
 </template>
 
 
 
 <script>
-   import { Carousel, Slide } from 'vue-carousel';
-   export default {
-
-   components: {
-   Carousel,
-   Slide
-   }
-
-   };
+import { Carousel, Slide } from 'vue-carousel';
+import UserListElement from "./UserListElement.vue";
+import api from "@/api";
+export default {
+    name: "Users",
+    components: {
+    Carousel,
+    UserListElement,
+    Slide
+   },
+    props: ["userId"],
+    data() {
+      return {
+        user: null
+      }
+    },
+    created() {
+    this.user = api.fetchUser(this.userId);
+    }
+    };
 </script>
 
 <style>
@@ -64,7 +76,7 @@
        font-family: 'Source Sans Pro', Arial, sans-serif;
        position: relative;
        overflow: hidden;
-       margin: 90px;
+       margin: auto;
        min-width: 300px;
        max-width: 455px;
        max-height: 360px;
@@ -190,5 +202,15 @@ top: 75%;
    figure.snip1382:hover figcaption p,
    figure.snip1382.hover figcaption p {
        opacity: 0.7;
+   }
+   .works {
+       margin: auto;
+   }
+   .snip1382 {
+    position: relative;
+    margin:auto;
+   }
+   h3 {
+       font-size: 60px;
    }
 </style>
